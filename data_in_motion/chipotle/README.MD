@@ -1,4 +1,6 @@
-Challenge 1: Chipotle Sales
+# Challenge 1
+
+## Chipotle Sales
 
 Created by
 

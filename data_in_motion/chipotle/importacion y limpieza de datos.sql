@@ -1,10 +1,10 @@
 -- Crear la tabla "ventas"
 CREATE TABLE ventas (
-    order_id INT,
-    quantity INT,
+    order_id VARCHAR(50),
+    quantity VARCHAR(50),
     item_name VARCHAR(50),
     choice_description VARCHAR(250),
-    item_price DECIMAL(5,2)
+    item_price VARCHAR(50)
 );
 
 -- Cargar datos en la tabla desde un archivo TSV
@@ -25,8 +25,7 @@ FROM ventas
 WHERE ISNUMERIC(order_id) = 0;
 
 -- Encontrar registros con order_id que contiene caracteres no numericos
-SELECT *
-FROM ventas
+SELECT * FROM ventas
 WHERE PATINDEX('%[^0-9.,]%', order_id) > 0;
 
 -- Encontrar valores de "item_price" que no tienen el formato correcto
@@ -73,7 +72,7 @@ SELECT * FROM temporal;
 DROP TABLE ventas;
 
 -- Cambiar el nombre de la tabla temporal a "ventas"
-sp_rename 'temporal', 'ventas';
+ EXEC sp_rename 'temporal', 'ventas';
 
 -- Contar la cantidad de registros en la tabla "ventas"
 SELECT COUNT(*) FROM ventas;
