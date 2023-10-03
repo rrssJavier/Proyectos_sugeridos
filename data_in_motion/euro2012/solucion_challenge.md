@@ -18,7 +18,8 @@ print(datos_df.isna().sum())
 # visualizamos el registro que le falta un dato
 print(datos_df[['Team','Clearances off line']])
 
-# como son pocos registros y la moda vendria siendo 0.0 para este atributo, le asignamos ese valor a Croatia
+# como son pocos registros y la moda vendria siendo 0.0 para este atributo, 
+# le asignamos ese valor a Croatia
 datos_df.loc[datos_df['Team'] == 'Croatia', 'Clearances off line'] = 0.0
 ```
 
