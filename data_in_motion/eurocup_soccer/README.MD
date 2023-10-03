@@ -1,7 +1,6 @@
-# Challenge 1
+# Challenge 2
 
-## Chipotle Sales
-
+## EuroCup Soccer
 Created by
 
 Kedeisha Bryan May 22, 2023
