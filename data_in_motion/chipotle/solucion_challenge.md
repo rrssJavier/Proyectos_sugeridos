@@ -1,6 +1,6 @@
 # Solucion Challenge 1: Chipotle Sales
 
-## Data cleaning
+## Limpieza de Datos
 ```SQL
 -- Verifico que si hay valores faltantes
 SELECT * 
